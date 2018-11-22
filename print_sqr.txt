@@ -1,0 +1,18 @@
+push 50
+push rax
+push 1
+push rbx
+call 7
+end
+: 7
+pop rbx
+sqr
+Out
+pop rbx
+push 1
+add
+push rbx
+pop rbx
+pop rax
+ja 7
+ret

@@ -1,0 +1,90 @@
+push 0
+push rax
+push 0
+push rbx
+push 0
+push rcx
+pop rax
+push 0
+je 7
+call 5
+pop rdx
+push 0
+jb 3
+pop rdx
+push 0
+je 4
+noroots
+end
+
+: 3
+push -1
+pop rbx
+mul
+pop rdx
+sqrt
+add
+push 2
+div
+pop rax
+div
+Out
+
+push -1
+pop rbx
+mul
+pop rdx
+sqrt
+sub
+push 2
+div
+pop rax
+div
+Out
+end
+
+: 4
+push -1
+pop rbx
+mul
+push 2
+div
+pop rax
+div
+Out
+end
+
+: 5
+pop rbx
+sqr
+push 4
+pop rax
+mul
+pop rcx
+mul
+sub
+push rdx
+ret
+
+: 7
+pop rbx
+push 0
+je 1
+push -1
+pop rcx
+mul
+pop rbx
+div
+Out
+end
+
+: 1
+pop rcx
+push 0
+je 2
+noroots
+end
+
+: 2
+inf
+end
