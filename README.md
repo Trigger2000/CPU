@@ -1,3 +1,5 @@
 # CPU
 
-Эмулятор процессора. Исполняет некоторые команды, список которых можно найти в sample тестах
+Simple emulator of assembler machine. Has commands, described in "command.h" files, that translates into byte code ("log.txt") and then executes it. 
+
+file "in.txt" has input program. Here is a solver of quadratic aquation with a = 7, b = 0, c = -6. Another example of input program locates in "print_sqr.txt" - prints squares of natural numbers from 0 to 50. 
